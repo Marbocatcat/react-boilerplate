@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navigation } from './components/common';
+import { Navigation, Button } from './components/common';
 
 export default class App extends Component {
 
@@ -9,11 +9,13 @@ export default class App extends Component {
       <li><a href="">{item}</a></li>
     );
   }
-
   render() {
     return (
       <div>
-        <Navigation position='center'>{this.listContent()}</Navigation>
+        <Navigation position='center' color='#333'>{this.listContent()}</Navigation>
+        <Button color='#333' backgroundColor="#FFF">
+          Login
+        </Button>
       </div>
     );
   }
